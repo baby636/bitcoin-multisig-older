@@ -31,7 +31,7 @@
     "commander": "^2.19.0",
     "blockchain.info": "^2.12.1",
     "request-promise": "^4.2.2",
-    "aws-sdk": "^2.325.0",
+    "aws-sdk": "^2.988.0",
     "mocha": "5.2.0",
     "chai": "4.2.0",
     "enzyme": "3.8.0",
