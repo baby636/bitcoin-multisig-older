@@ -58,7 +58,9 @@
     "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "mocha --recursive --grep @integration --invert",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "bin": {
     "export_ledger_pubkey": "./bin/export_ledger_pubkey.js",
@@ -68,5 +70,9 @@
     "generate_outputs": "./bin/generate_outputs.js",
     "sign_multisig_spend": "./bin/sign_multisig_spend.js",
     "construct_signed_transaction": "./bin/construct_signed_transaction.js"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
